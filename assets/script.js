@@ -30,6 +30,12 @@ const collectEmployees = function() {
 // Display the average salary
 const displayAverageSalary = function(employeesArray) {
   // TODO: Calculate and display the average salary
+  totalSalary = 0;
+  // default value to add to
+  for (i = 0; i < employeesArray.length; i++) {
+    const currentEmployee = employeesArray[i];
+    totalSalary += parseInt(currentEmployee.salary);
+  }
 }
 
 // Select a random employee
