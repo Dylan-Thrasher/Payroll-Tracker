@@ -18,7 +18,7 @@ const collectEmployees = function() {
       let employee = {
         firstName: firstNameCell,
         lastName: lastNameCell,
-        salary: salaryCell,
+        salary: parseFloat(salaryCell),
     }
     decision = confirm("Do you want to add another employee?");
 
