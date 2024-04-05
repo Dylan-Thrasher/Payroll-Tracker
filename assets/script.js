@@ -36,6 +36,11 @@ const displayAverageSalary = function(employeesArray) {
     const currentEmployee = employeesArray[i];
     totalSalary += parseInt(currentEmployee.salary);
   }
+  let averageSalary = totalSalary / employeesArray.length;
+  // divides the sum by the number of employees, creating the average
+  console.log(`The average salary is $${averageSalary.toFixed(2)} among the ${employeesArray.length} employees.`);
+  // provides the average salary in a message in the console
+  return averageSalary;
 }
 
 // Select a random employee
